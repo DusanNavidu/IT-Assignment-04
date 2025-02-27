@@ -1,0 +1,68 @@
+body{
+    margin: 0;
+}
+
+.image-sky{
+    width: 100vw;
+    height: 99vh;
+}
+
+#building-road-image{
+    width: 100vw;
+    height: 600px;
+}
+
+.image-container{
+    width: 200vw;
+    height: 800px;
+    display: flex;
+    position: absolute;
+    bottom: 0vh; 
+}
+
+#car-image{
+    width: 600px;
+    position: fixed;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+
+.wheels{
+    width: 690px;
+    position: fixed;
+    top: 73%;
+    left: 50%;
+    padding-right: 20px;
+
+    display: flex;
+    justify-content: space-around;
+    transform: translate(-50% , -50%);
+    animation-name: wheel-rotate;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+/* #wheel-1{
+    padding-right: 50px;
+} */
+
+.wheel{
+    width: 100px;
+}
+
+*{
+    margin: 0;
+}
+
+@keyframes wheel-rotate {
+    0%,
+    20%
+    {
+        transform: rotate(360deg);
+    }
+    20%,
+    50%{
+        transform: rotate(360deg);
+    }
+}

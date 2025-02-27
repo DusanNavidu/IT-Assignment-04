@@ -1,0 +1,73 @@
+body{
+    margin: 0;
+}
+
+.circle{
+    width: 300px;
+    height: 100px;
+    border-radius: 30px;
+
+    animation-name: go-around;
+    animation-duration: 10s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+    position: absolute;
+}
+
+@keyframes go-around {
+    0%{
+        top: 0;
+        left: 0;
+        background-color: blue;
+    }
+    12.5%{
+        top: 0;
+        left: calc(100% - 300px);
+        transform: rotate(180deg);
+        background-color: darkgoldenrod;
+    }
+    25%{
+        top: calc(100% - 200px);
+        left: calc(100% - 300px);
+        background-color: red;
+        transform: rotate(360deg);
+    }
+    37.5%{
+        top: calc(100% - 200px);
+        left: 0;
+        background-color: rgb(252, 72, 252);
+        transform: rotate(180deg);
+    }
+    50%{
+        top: 0;
+        left: 0;
+        background-color: orange;
+        transform: rotate(360deg);
+    }
+    62.5%{
+        top: calc(100% - 200px);
+        left: 0;
+        background-color: rgb(252, 72, 252);
+        transform: rotate(180deg); 
+    }
+    75%{
+        top: calc(100% - 200px);
+        left: calc(100% - 300px);
+        background-color: red;
+        transform: rotate(360deg);
+    }
+    87.5%{
+        top: 0;
+        left: calc(100% - 300px);
+        transform: rotate(180deg);
+        background-color: yellow;
+    }
+    100%{
+        top: 0;
+        left: 0;
+        background-color: darkgoldenrod;
+        transform: rotate(0deg);
+        background-color: blue;
+    }
+}
